@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Srinivas_22BCE9653</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="loginbtn">LOGIN</string>
+    <string name="changelanguage">Change Language</string>
+</resources>

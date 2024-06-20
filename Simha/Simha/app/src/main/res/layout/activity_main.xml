@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abc123"
+    tools:context=".MainActivity">
+
+<!--    These colors are defined in android os-->
+<!--    android:textColor="@color/mycolor"-->
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="@dimen/mywidth"
+        android:layout_height="@dimen/myheight"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="73dp"
+        android:textColor="@color/mycolor"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/mywidth"
+        android:layout_height="@dimen/myheight"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/mycolor"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="numberPassword"
+        app:layout_constraintStart_toStartOf="@+id/username"
+        app:layout_constraintTop_toTopOf="@+id/username"/>
+
+
+<!--    These colors are defined in android os-->
+<!--    android: textColor="@color/black"-->
+
+<!--    dp - density independent pixels-->
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="@dimen/btnwidhth"
+        android:layout_height="@dimen/btnheight"
+        android:textColor="@color/white"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/loginbtn"
+        android:textStyle="bold"
+        android:onClick="clickHandler"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="@+id/password" />
+
+    <Button
+        android:id="@+id/changelanguage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/changelanguage"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="80dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/loginbtn"
+        app:layout_constraintTop_toTopOf="@+id/loginbtn"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
